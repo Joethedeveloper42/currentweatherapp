@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+	<script
+  	src="https://code.jquery.com/jquery-3.3.1.min.js"
+  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  	crossorigin="anonymous"></script>
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  	<link rel="stylesheet" type="text/css" href="assets/weather.css">
+
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 main-pic">
+      <h1>Geo<i class="fa fa-bolt" aria-hidden="true"></i>ocati<i class="fa fa-sun-o" aria-hidden="true"></i>n Weather App</h1>
+      <p>Your current latitude is: <b><span id="current-lat"></span></b></p>
+     	<p>Your current longitude is: <b><span id="current-long"></span></b></p>
+  </div> 
+</div>
+
+
+<div class="row">
+    <div class="col-md-4" id="weather-info">
+      <p id="place"><span id="city-name"></span>, <span id="country"></span></p>
+      <p><span id="description"></span> </p>
+      <p>Temp: <span id="current-temp"></span><span id="current-temp-fah"></span>
+        <button type="button" id="change-temp-button" class="btn btn-outline-info btn-sm">°C/°F</button>
+      </p>
+      <p>Humidity: <span id="humidity"></span> </p>
+	    <p><span id="description"></span> </p>
+	  </div>
+   <div class="col-md-8" id="weather-display-div">
+      <div id="cloudy-weather"></div>
+      <div id="rainy-weather"></div>
+      <div id="snowy-weather"></div>
+      <div id="sunny-weather"></div>
+      <div id="stormy-weather"></div>
+    </div>
+
+  </div>
+  
+</div>
+
+<script type="text/javascript" src="assets/weather.js"></script>
+</body>
+</html>
